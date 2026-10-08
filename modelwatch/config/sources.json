@@ -1,0 +1,24 @@
+{
+  "config_version": 3,
+  "settings": {
+    "confirmations_required": 2,
+    "max_bytes": 2000000
+  },
+  "sources": [
+    {
+      "vendor": "Google",
+      "name": "Gemini API pricing",
+      "url": "https://ai.google.dev/gemini-api/docs/pricing"
+    },
+    {
+      "vendor": "Google",
+      "name": "Gemini API release notes",
+      "url": "https://ai.google.dev/gemini-api/docs/changelog"
+    },
+    {
+      "vendor": "Anthropic",
+      "name": "SDK/API latest release",
+      "url": "https://api.github.com/repos/anthropics/anthropic-sdk-python/releases/latest"
+    }
+  ]
+}
