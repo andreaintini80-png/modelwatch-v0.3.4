@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alys-modelwatch"
+version = "0.3.4"
+description = "AI provider change monitor with local or Redis REST persistence"
+requires-python = ">=3.10"
+dependencies = ["mcp>=2,<3"]
+readme = "README.md"
+license = {file = "LICENSE.md"}
+authors = [{name = "Alys The Experiment", email = "alystheexperiment@gmail.com"}]
+
+[project.scripts]
+modelwatch = "modelwatch.cli:entrypoint"
+modelwatch-mcp = "modelwatch.mcp_server:main"
+
+[tool.setuptools.packages.find]
+include = ["modelwatch*"]
+
+[tool.setuptools.package-data]
+modelwatch = ["config/*.json"]
